@@ -14,6 +14,18 @@ searchbtn.onclick = function () {
   let url = 'https://www.google.com/search?q=' + query.value;
   window.open(url);
 }
+query.addEventListener('keydown',event=>{
+   console.log(event)
+  switch (event.key) {
+    case "Enter":
+        let url = 'https://www.google.com/search?q=' + query.value;
+        open(url);
+        break;
+  
+    default:
+        break;
+  }
+});
 ////search ends
 function clickedparrot(){
     var audio=new Audio("Small Parrot Interior Constant Calls - QuickSounds.com.mp3")
